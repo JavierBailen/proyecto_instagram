@@ -14,7 +14,7 @@
         <div class="flex items-center">
             <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="{{ route('posts.index') }}">Posts</a>
             <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/login">Login</a>
-            <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#">Registro</a>
+            <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="{{ route('users.create') }}">Registro</a>
             @auth
             <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="{{ route('posts.create') }}">Crear nuevo Post</a>
             @endauth
